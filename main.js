@@ -21,7 +21,7 @@ function Question(text, score) {
 }
 
 function next() {
-    if (currentQuestion + 1 < questions.length) {
+    if(currentQuestion + 1 < questions.length) {
         currentQuestion++;
         document.getElementById("ask").innerText = questions[currentQuestion].text;
     } else {
@@ -33,8 +33,8 @@ function next() {
 }
 
 function answer(ans) {
-    if (currentQuestion < questions.length) {
-        if (ans == true) {
+    if(currentQuestion < questions.length) {
+        if(ans == true) {
             support += questions[currentQuestion].score;
         } else if (ans == false) {
             support -= questions[currentQuestion].score;
