@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Do you support Israel or Palestine?</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <br><br><br><br>
+        <h1>Do you support Israel or Palestine?</h1>
+        <h3>This short quiz will attempt to guess you stance on the current conflict</h3>
+        <br>
+        <div id="quiz">
+            <h2 id="ask"></h2>
+            <div id="no" class="button" onclick="answer(false)">No</div>
+            <div id="no" class="button" onclick="answer('neut')">Neutral</div>
+            <div id="yes" class="button"  onclick="answer(true)">Yes</div>
+        </div>
+        <div id="results">
+            <div class="results">Hamas</div>
+            <div class="results" id="line"></div>
+            <div class="results" id="center"></div>
+            <div class="results" id="res"></div>
+            <div class="results">Israel</div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
